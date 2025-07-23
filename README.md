@@ -5,13 +5,13 @@ Submitted by: Praise Okoli
 This web app: Provides users with books that match their desired authors and titles. Summary statistics include total number of authors, total book count, and average edition count. Students can search by book title and author. 
 API integration provided by: openlibrary.org 
 
-Time spent: 3 hours spent in total
+Time spent: 5 hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [ ] **Clicking on an item in the list view displays more details about it**
+- [X] **Clicking on an item in the list view displays more details about it**
   - Clicking on an item in the dashboard list navigates to a detail view for that item
   - Detail view includes extra information about the item not included in the dashboard view
   - The same sidebar is displayed in detail view as in dashboard view

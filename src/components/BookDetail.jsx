@@ -1,5 +1,7 @@
 import { Component, useEffect, useState } from "react";
 import { useParams } from "react-router-dom"
+import NotFound from "../routes/NotFound";
+
 
 //const API_KEY = import.meta.env.VITE_BOOK_SEARCH_API;
 const BOOK_COVERS = import.meta.env.VITE_BOOK_COVERS_API;
@@ -43,6 +45,9 @@ function BookDetail() {
         }
     }, [workKey]);
 
+    if (error) {
+        return <NotFound />;
+    }
 
     return (
         <>

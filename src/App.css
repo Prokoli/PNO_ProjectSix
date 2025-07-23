@@ -1,5 +1,31 @@
 body {
     background-color: rgb(185, 176, 163);
+    margin-left: 150px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 1000;
+    background: rgb(65, 64, 64);
+    margin: 5px 10px;
+    padding: 2rem 1rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: flex-start;
+    border-color: rgb(94, 92, 92);
+    border-style: solid;
+    border-width: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: none;
+    margin-left: none;
 }
 
 h1 {

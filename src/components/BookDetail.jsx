@@ -9,11 +9,13 @@ function BookDetail() {
     const [authorName, setAuthorName] = useState("");
 
     const { workKey } = useParams()
+    console.log("workKey:", workKey);
     useEffect(() => {
         const fetchBookDetails = async () => {
             try {
                 const response = await fetch(
                     `https://openlibrary.org/works/${workKey}.json`
+                    //works/${workKey}
                     //work key should be formatted as follows: "/works/*insertkeyhere*"
                 );
                 if (!response.ok) {

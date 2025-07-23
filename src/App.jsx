@@ -93,8 +93,8 @@ function App() {
       <h2 className='results-h2'>Results</h2>
       <div className='book-results'>
         {filteredBooks.map((book, index) => (
-          <div className='book-card'>
-            <BookCard className='book-card' key={index}
+          <div className='book-card' key={index}>
+            <BookCard className='book-card' key={index} work={book}
               bookTitle={book.title}
               author={book.author_name ? book.author_name.join(', ') : 'Unknown'}
               author_image={`${AUTHOR_IMAGES}${book.author_key[0]}-M.jpg`}
